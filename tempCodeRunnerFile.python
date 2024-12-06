@@ -1,0 +1,12 @@
+import numpy as np
+import os
+
+# Print contents of each vector file
+poses_dir = 'poses/'
+for filename in os.listdir(poses_dir):
+    if filename.endswith('_vector.npy'):
+        vector_path = os.path.join(poses_dir, filename)
+        pose_vector = np.load(vector_path, allow_pickle=True).item()
+        print(f"\n{filename}:")
+        for angle_name, (mean, std) in pose_vector.items():
+            print(f"{angle_name}: mean={mean:.2f}, std={std:.2f}")
