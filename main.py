@@ -231,4 +231,4 @@ class YogaPoseDetector:
 
 if __name__ == "__main__":
     detector = YogaPoseDetector()
-    detector.run("downward_dog.mp4")
+    detector.run("half-moon-pose.mp4")
