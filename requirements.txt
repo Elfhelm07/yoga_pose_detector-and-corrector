@@ -2,3 +2,9 @@ cv2
 mediapipe
 moviepy
 numpy
+joblib
+os
+collections
+pandas
+sklearn
+math
